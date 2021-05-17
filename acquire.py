@@ -64,3 +64,7 @@ def get_iris_data():
                 JOIN measurements
                 USING(species_id)'''
     return pd.read_sql(sql_query, get_connection('iris_db'))
+
+
+def get_iris_data_csv():
+    return pd.read_csv("iris_df.csv")
