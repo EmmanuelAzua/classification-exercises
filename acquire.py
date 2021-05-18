@@ -46,7 +46,7 @@ def get_connection(db, username=username, host=host, password=password):
     '''
     return f'mysql+pymysql://{username}:{password}@{host}/{db}'
 
-def get_titanic_data():
+def new_titanic_data():
     '''
     This function reads in the titanic data from the Codeup db
     and returns a pandas DataFrame with all columns.
